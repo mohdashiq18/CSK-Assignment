@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   font-family: "Inter 28 Pt", Arial, sans-serif;
 }
@@ -396,7 +396,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20;
+  gap: 20px;
   flex: 2;
   background: white;
   /* padding: 20px; */
@@ -482,7 +482,7 @@ h3 {
   font-family: "Inter 28 Pt", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 10;
+  margin-top: 10px;
   line-height: 24px;
 }
 
@@ -544,12 +544,12 @@ td {
   width: auto;
   height: auto;
   min-height: auto;
-  padding: 0 0 1.5rem;
+  /* padding: 0px 0px 1.5rem;
   grid-column-gap: 0rem;
-  grid-row-gap: 0rem;
+  grid-row-gap: 0rem; */
   border: 1px solid #1818181a;
   border-radius: 8px;
-  flex-flow: column;
+  /* flex-flow: column; */
 }
 
 .buy-form h3 {
@@ -558,7 +558,7 @@ td {
 
 .div-tab-buySell>span {
   cursor: pointer;
-  padding: 10 20;
+  padding: 10px 20px;
 
 }
 
@@ -663,8 +663,8 @@ td {
 
 .div-tab-buySell {
   display: flex;
-  gap: 20;
-  padding: 0 15;
+  gap: 20px;
+  padding: 0px 15px;
   border-bottom: .1rem solid rgb(223, 213, 213);
 }
 
@@ -674,7 +674,7 @@ td {
 }
 
 .financial-table td {
-  padding-left: 10 !important;
+  padding-left: 10px !important;
 
 }
 
