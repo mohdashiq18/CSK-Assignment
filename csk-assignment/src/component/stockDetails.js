@@ -392,11 +392,15 @@ const StockDetails = () => {
       {/* Right Side - Buy Form */}
       <div className="buy-form">
         <div className="buy-form-container">
-          <div className="div-tab-buySell">
-            <span className={intrest == "Buy" ? "active" : "diactive"} onClick={() => {
+          <div className="div-tab-buySell"style={{display:'flex',gap:"20px",padding:"0px 15px"}}>
+            <span style={{
+              padding:"10px 20px"
+            }} className={intrest == "Buy" ? "active" : "diactive"} onClick={() => {
               setIntrest("Buy")
             }}>Buy</span>
-            <span className={intrest != "Buy" ? "active" : "diactive"} onClick={() => {
+            <span style={{
+              padding:"10px 20px"
+            }} className={intrest != "Buy" ? "active" : "diactive"} onClick={() => {
               setIntrest("Sell")
             }}>Sell</span>
             {/* <h3>Buy</h3> */}

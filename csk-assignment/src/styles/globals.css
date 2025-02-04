@@ -734,10 +734,10 @@ td {
   color: #757575;
   border: 1px solid #0000001a;
   border-radius: 8px;
-  min-height: 2rem;
+  min-height: 3rem;
   margin-bottom: 0;
   font-family: "Inter 28 Pt", Arial, sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .stock-infon>h3 {
