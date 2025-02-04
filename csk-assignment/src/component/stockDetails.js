@@ -45,7 +45,7 @@ const StockDetails = () => {
   const handleSubmit = async (e) => {
 
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/api/sheet", {
+    const response = await fetch("/api/sheet", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...formData, intrest: intrest }),
@@ -63,31 +63,31 @@ const StockDetails = () => {
     console.log(result);
   };
   useEffect(() => {
-    axios.get("http://localhost:3000/api/financials_income_api").then((res) => setInStatement(res.data.data)).catch((err) => console.log(err))
-    axios.get("http://localhost:3000/api/financials_balancesheet_api").then((res) => setBalanceSheet(res.data.data)).catch((err) => console.log(err))
-    axios.get("http://localhost:3000/api/financials_cash_flow_api").then((res) => setCashFlow(res.data.data)).catch((err) => console.log(err))
-    axios.get("http://localhost:3000/api/fundamentals").then((res) => setFundamentals(res.data.data)).catch((err) => console.log(err))
-    axios.get("http://localhost:3000/api/shareholding_api").then((res) => setShareholding(res.data.data)).catch((err) => console.log(err))
-    axios.get("http://localhost:3000/api/promoters_api").then((res) => setPromoters(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/financials_income_api").then((res) => setInStatement(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/financials_balancesheet_api").then((res) => setBalanceSheet(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/financials_cash_flow_api").then((res) => setCashFlow(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/fundamentals").then((res) => setFundamentals(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/shareholding_api").then((res) => setShareholding(res.data.data)).catch((err) => console.log(err))
+    axios.get("/api/promoters_api").then((res) => setPromoters(res.data.data)).catch((err) => console.log(err))
     getCartData("monthly")
   }, [])
   const getCartData = (period) => {
     if (period == "monthly") {
-      axios.get("http://localhost:3000/api/monthlyChartData").then((res) => {
+      axios.get("/api/monthlyChartData").then((res) => {
         const Data = res.data.data
         setXaxisData(Object.keys(Data[0]))
         setYaxisData(Object.values(Data[0]))
       }).catch((err) => console.log(err))
     }
     else if (period == "weekly") {
-      axios.get("http://localhost:3000/api/weeklyChart").then((res) => {
+      axios.get("/api/weeklyChart").then((res) => {
         const Data = res.data.data
         setXaxisData(Object.keys(Data[0]))
         setYaxisData(Object.values(Data[0]))
       }).catch((err) => console.log(err))
     }
     else {
-      axios.get("http://localhost:3000/api/monthlyChartData").then((res) => {
+      axios.get("/api/monthlyChartData").then((res) => {
         const Data = res.data.data
         setXaxisData(Object.keys(Data[0]))
         setYaxisData(Object.values(Data[0]))
