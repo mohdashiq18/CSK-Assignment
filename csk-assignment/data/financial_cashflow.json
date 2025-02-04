@@ -1,0 +1,44 @@
+[
+  {
+    "2021": 5919,
+    "2022": 4133,
+    "2023": 7053,
+    "2024": 27916,
+    "Cash-Flow Statement": "PBT"
+  },
+  {
+    "2021": 6193,
+    "2022": 5273,
+    "2023": 6512,
+    "2024": 26360,
+    "Cash-Flow Statement": "OPBWC"
+  },
+  {
+    "2021": -1659,
+    "2022": -6879,
+    "2023": 3170,
+    "2024": -4510,
+    "Cash-Flow Statement": "Change in Receivables"
+  },
+  {
+    "2021": " - ",
+    "2022": "-",
+    "2023": "-",
+    "2024": -86,
+    "Cash-Flow Statement": "Change in Inventories"
+  },
+  {
+    "2021": 918,
+    "2022": 4315,
+    "2023": 802,
+    "2024": -3128,
+    "Cash-Flow Statement": "Change in Payables"
+  },
+  {
+    "2021": "-",
+    "2022": "-",
+    "2023": 5160,
+    "2024": 22041,
+    "Cash-Flow Statement": "Other Changes"
+  }
+]
